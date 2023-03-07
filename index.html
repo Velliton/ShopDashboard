@@ -8,7 +8,7 @@
 		<!-- Подключаем CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<!--медиа -->
@@ -18,9 +18,9 @@
 	<body>
 		<div class="main-container d-flex ">
 			<aside class="sidebar" id="side_nav">
-				<header class="sidebar-header  px-4 py-3 mb-4">
+				<header class="sidebar-header d-flex align-items-center justify-content-between px-4 py-3 mb-4">
 					<a href="#"><img src="./img/Logo.svg" alt="logo" width="82px" height="32px"></a>
-					<button class="btn d-md-none d-block close-btn px-1 py-0 text-red"><i class="fal fa-stream"></i></button>
+					<button class="btn d-md-none d-block close-btn px-1 py-0 text-red"><i class="fal fa-stream fs-4"></i></button>
 				</header>
 				<nav class="sidebar-menu">
 					<ul class="sidebar-menu-list list-unstyled d-flex flex-column">
@@ -130,11 +130,12 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="content-header-profile d-flex gap-1 align-items-center">
-						<div class="content-header-message py-4 ps-4 pe-3">
+					<button class="btn open-btn"><i class="fal fa-stream fs-4"></i></button>
+					<div class="content-header-profile d-flex gap-3 align-items-center">
+						<div class="content-header-message">
 							<img src="./img/envelope.svg"  alt="letter">
 						</div>
-						<div class="content-header-user d-flex align-items-end">
+						<div class="content-header-user d-flex gap-3 align-items-end">
 							<img src="./img/photo.jpg" alt="user">
 							<p class="content-header-user-name">Максим Добжанский</p>
 						</div>
@@ -263,7 +264,17 @@
 			$(".sidebar ul li").on('click',function(){
 				$(".sidebar ul li.active").removeClass('active');
 				$(this).addClass('active');
-			})
+			});
+
+			$('.open-btn').on('click',function(){
+			$('.sidebar').addClass('active');
+			});
+			
+			$('.close-btn').on('click',function(){
+				$('.sidebar').removeClass('active');
+			});
+
+
 		</script>
 		
 		
