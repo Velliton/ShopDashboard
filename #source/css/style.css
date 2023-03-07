@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  background: #F8FAFF;
+  background-color: #6666CC;
+}
+
+#side_nav {
+  background: #FFFFFF;
+  min-width: 256px;
+  max-width: 256px;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #7D7D7D;
+}
+
+img {
+  stroke: red;
+  fill: red;
+}
+
+.icon svg:hover {
+  stroke: red;
+  fill: red;
+}
+
+li::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 20px;
+  height: 100%;
+  width: 5px;
+  background-color: black;
+}
+
+li.active {
+  font-weight: 900;
+  color: black;
+  border-left: 3px solid #6666CC;
+}
+
+li.active a {
+  font-weight: 900;
+  color: black;
+}
+
+li.active a::before {
+  color: #6666CC;
+}
+
+.modal {
+  border: 1px solid grey;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-header {
+  border: none;
+}
+
+.create__btn {
+  background-color: #55C97B;
+  border: none;
+}
+
+.drop__btn {
+  background-color: #fff;
+  color: black;
+  border: 1px solid grey;
+}
+
+.modal__select {
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  #side_nav {
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  #side_nav.active {
+    margin-left: 0;
+  }
+}
