@@ -390,6 +390,22 @@ body {
   #side_nav.active {
     margin-left: 0;
   }
+  .content-header-message {
+    padding: 10px 6px 10px 10px;
+    border: 1px solid #D4D4D4;
+    border-radius: 10%;
+  }
+  .content-header-user {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 16px rgba(136, 167, 245, 0.18);
+            box-shadow: 0px 0px 16px rgba(136, 167, 245, 0.18);
+    max-width: 240px;
+    padding: 2px 20px 2px 15px;
+  }
+  .content-header-user img {
+    border-radius: 50%;
+    border: 2px solid #D9D9D9;
+  }
   .content-management-action-title {
     margin-bottom: 20px;
   }
@@ -405,6 +421,32 @@ body {
             align-items: center;
     gap: 5%;
     padding: 6px 10px 6px 6px;
+    border: none;
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .content-management-action {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-management-action-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content-management-action button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10%;
+    padding: 8px 20px 8px 10px;
     border: none;
     font-size: 12px;
   }

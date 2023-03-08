@@ -20,7 +20,7 @@
 			<aside class="sidebar" id="side_nav">
 				<header class="sidebar-header d-flex align-items-center justify-content-between px-4 py-3 mb-4">
 					<a href="#"><img src="./img/Logo.svg" alt="logo" width="82px" height="32px"></a>
-					<button class="btn d-md-none d-block close-btn px-1 py-0 text-red"><i class="fal fa-stream fs-4"></i></button>
+					<button class="btn d-md-none d-block close-btn px-1 py-0 text-red"><i class="fal fa-times fs-4"></i></button>
 				</header>
 				<nav class="sidebar-menu">
 					<ul class="sidebar-menu-list list-unstyled d-flex flex-column">
@@ -122,6 +122,37 @@
 			
 			<main class="content">
 				<header class="content-header pt-3 d-flex justify-content-between">
+					<!-- <nav class="navbar navbar-expand-sm navbar-light">
+						<div class="container-fluid p-0">
+							
+							
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+								<img src="./img/photo.jpg" alt="user">
+							</button>
+							<div class="collapse navbar-collapse" id="navbarBasic">
+							<ul class="navbar-nav me-auto mb-2 mb-xl-0">
+								<li class="nav-item">
+									<a class="nav-link active p-0" aria-current="page" href="#">Главная</a>
+								</li>
+								<li class="nav-item">
+								<a class="nav-link active p-0" aria-current="page" href="#">Мои магазины</a>
+								</li>
+							</ul>
+							<button class="btn open-btn testir"><i class="fal fa-stream fs-4 d-md-none"></i></button>
+							
+							<div class="content-header-right d-flex align-items-center justify-content-between-md gap-3">
+								<div class="content-header-message">
+									<img src="./img/envelope.svg"  alt="letter">
+								</div>
+								<div class="content-header-user d-flex gap-3 align-items-end">
+									<img src="./img/photo.jpg" alt="user">
+									<p class="content-header-user-name">Максим Добжанский</p>
+								</div>
+							</div>
+						</div>
+						</div>
+					</nav> -->
+					
 					<nav class="content-header-menu d-flex">
 						<a class="content-header-title" href="#">Главная</a>
 						<ul class="content-header-menu-list">
@@ -130,8 +161,9 @@
 							</li>
 						</ul>
 					</nav>
-					<button class="btn open-btn"><i class="fal fa-stream fs-4"></i></button>
+					
 					<div class="content-header-profile d-flex gap-3 align-items-center">
+						<button class="btn open-btn d-md-none"><i class="fal fa-stream fs-4"></i></button>
 						<div class="content-header-message">
 							<img src="./img/envelope.svg"  alt="letter">
 						</div>
@@ -148,7 +180,7 @@
 					<button type="button" class="btn btn-success content-create-btn" data-bs-toggle="modal" data-bs-target="#myModal" >
 						<img src="./img/plus.svg" alt="plus"> Создать свой магазин
 					</button>
-					<div class="content-management">
+					<div class="content-management d-flex flex-column">
 						<h1 class="content-management-title">Управление магазинами</h1>
 						<div class="content-management-block d-flex">
 							<table class="table">
