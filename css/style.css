@@ -426,10 +426,19 @@ body {
   }
 }
 @media (max-width: 650px) {
+  .content-management-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .content-management-action {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .content-management-action-item {
     -ms-flex-wrap: wrap;
@@ -437,6 +446,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .content-management-action-item:last-child {
+    display: none;
   }
   .content-management-action button {
     display: -webkit-box;

@@ -364,7 +364,7 @@ body{
 
 
 @media(max-width:767px){
-    
+
     #side_nav{
         margin-left: -300px;
         position: fixed;
@@ -422,11 +422,21 @@ body{
   
     .content{
         &-management{
+            &-block{
+                flex-direction: column;
+                align-items: flex-start;
+            }
             &-action{
-            align-items: center;
+
+            
+            align-items: flex-start;
+            
                 &-item{
                     flex-wrap: wrap;
                     justify-content: center;
+                    &:last-child{
+                        display: none;
+                    }
                 }
                 button{
                     display: flex;
@@ -440,6 +450,11 @@ body{
         }
     }
 }
+
+@media(max-width:576px){
+
+}
+
 
 @media(max-width:395px){
     .modal{
